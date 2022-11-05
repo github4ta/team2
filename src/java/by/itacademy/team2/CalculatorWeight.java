@@ -1,4 +1,4 @@
-package java.by.itacademy.team2;
+package itacademy.team2;
 
 /**
  * Расчет идеального веса по формуле Лоренца
