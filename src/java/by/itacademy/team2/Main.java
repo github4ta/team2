@@ -5,9 +5,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        calculator.setHeight(175);
-        calculator.setWeight(75);
+        Calculator calculator = new Calculator(175, 75);
 
         System.out.println(Arrays.toString(calculator.idealWeight(175)));
 
