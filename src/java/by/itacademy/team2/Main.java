@@ -6,8 +6,6 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        //CalculatorBmi calculatorBmi = new CalculatorBmi(175, 75);
-
         CalculatorBroca calculatorBrocaObj = new CalculatorBroca(175, 21, "female", 20);
         int brocaResult = calculatorBrocaObj.calculate();
         System.out.printf("Рекомендованный вес: %s\n", brocaResult);
