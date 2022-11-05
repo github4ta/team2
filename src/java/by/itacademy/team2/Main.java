@@ -5,11 +5,21 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        Calculator calculator = new Calculator(175, 75);
 
-        System.out.println(Arrays.toString(calculator.idealWeight(175)));
+        //CalculatorBmi calculatorBmi = new CalculatorBmi(175, 75);
 
-        //String bmiFormat = new DecimalFormat("#0.0").format(bmi);
-        System.out.println(calculator.bmiCorresponds(calculator.bmi()));
+        CalculatorBroca calculatorBrocaObj = new CalculatorBroca(175, 21, "female", 20);
+        int brocaResult = calculatorBrocaObj.calculate();
+        System.out.printf("Рекомендованный вес: %s\n", brocaResult);
+        System.out.println();
+
+        CalculatorBmi CalculatorBmiObj = new CalculatorBmi(175, 75);
+        int bmi = CalculatorBmiObj.bmi();
+        int[] idealWeight =  CalculatorBmiObj.idealWeight();
+        String bmiCorresponds = CalculatorBmiObj.bmiCorresponds(bmi);
+        System.out.printf("Индекс Массы Тела: %s\n", bmi);
+        System.out.printf("Расчет идеального веса: от %s до %s кг.\n", idealWeight[0], idealWeight[1]);
+        System.out.printf("Индекс Массы Тела соответствует: %s\n", bmiCorresponds);
+
     }
 }
