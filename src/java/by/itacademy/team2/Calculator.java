@@ -61,7 +61,6 @@ public class Calculator {
         return corresponds;
     }
 
-
     public float getHeight() {
         return height;
     }
