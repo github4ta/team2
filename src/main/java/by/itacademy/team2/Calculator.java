@@ -5,7 +5,6 @@ import org.checkerframework.checker.units.qual.C;
 public class Calculator {
 
     public int calculateIdealWeightByBroca(int height) {
-
         if (height < 100) {
             throw new IllegalArgumentException("If height < 100 weight will be negative. Please enter the correct height!");
         }
