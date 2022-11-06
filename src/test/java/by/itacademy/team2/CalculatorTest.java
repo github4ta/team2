@@ -23,8 +23,8 @@ public class CalculatorTest {
 
     @Test
     public void testCalculateIdealWeightByLorentz(){
-        float height = 200f;
-        float expected = 25f;
+//        float height = 200f;
+//        float expected = 25f;
 
 //        float actual = calculator.calculateIdealWeightByLorentz();
 //
