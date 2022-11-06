@@ -15,11 +15,9 @@ public class CalculatorNegler extends Calculator {
 
     public float idealWeight(){
         float idealWeight = 45;
-        if(height >= 152.4){
-            height -= 152.4f;
-            idealWeight += 0.9f * (height / 2.45f);
-            idealWeight *= 1.1f;
-        }
+        height -= 152.4f;
+        idealWeight += 0.9f * (height / 2.45f);
+        idealWeight *= 1.1f;
 
         return idealWeight;
     }
