@@ -20,4 +20,19 @@ public class Calculator {
 
         return idealWeight;
     }
+    public float calculateIdealWeightByBroca() {
+        if (height < 100) {
+            throw new IllegalArgumentException("If height < 100 weight will be negative. Please enter the correct height!");
+        }
+        int ratioBroca = 0;
+        if (height < 165) {
+            ratioBroca = 100;
+        } else if (height < 175) {
+            ratioBroca = 105;
+        } else {
+            ratioBroca = 110;
+        }
+        float idealWeightByBroca = height - ratioBroca;
+        return idealWeightByBroca;
+    }
 }
