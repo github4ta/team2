@@ -35,4 +35,7 @@ public class Calculator {
         float idealWeightByBroca = height - ratioBroca;
         return idealWeightByBroca;
     }
+    public int calculateIdealWeightByBrungardt(int height, int chestCircumference) {
+        return (height * chestCircumference) / 240;
+    }
 }
