@@ -23,7 +23,17 @@ public class Calculator {
         }
         return 0;
     }
+
     public int calculateIdealWeightByBrungardt(int height, int chestCircumference) {
         return (height * chestCircumference) / 240;
+    }
+
+    public float сalculateIdealWeightByNegler(float height){
+        float idealWeight = 45f;
+        height -= 152.4f;
+        idealWeight += 0.9f * (height / 2.45f);
+        idealWeight *= 1.1f;
+
+        return idealWeight;
     }
 }
