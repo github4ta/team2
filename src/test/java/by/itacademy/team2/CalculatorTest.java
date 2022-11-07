@@ -36,5 +36,16 @@ public class CalculatorTest {
 
         assertEquals(expectedResult, actualResult, 1);
     }
+    @Test
+    public void testCalculateIdealWeightByBrungardt() {
+        Calculator calculator = new Calculator();
+        int height = 160;
+        int chestCircumference = 90;
+        int expectedResult = 60;
+
+        int actualResult = calculator.calculateIdealWeightByBrungardt( height, chestCircumference);
+
+        assertEquals(expectedResult, actualResult);
+    }
 }
 
