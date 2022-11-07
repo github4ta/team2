@@ -23,4 +23,7 @@ public class Calculator {
         }
         return 0;
     }
+    public int calculateIdealWeightByBrungardt(int height, int chestCircumference) {
+        return (height * chestCircumference) / 240;
+    }
 }
