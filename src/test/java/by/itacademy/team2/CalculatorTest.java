@@ -1,6 +1,8 @@
 package by.itacademy.team2;
 
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -23,6 +25,16 @@ public class CalculatorTest {
         int actual = calculator.calculateIdealWeightByLorentz(height);
 
        assertEquals(expected,actual);
+    }
+    @Test
+    public void testCalculateIdealWeightByNegler() {
+        Calculator calculator = new Calculator();
+        float height = 160.0f;
+        float expectedResult = 53f;
+
+        float actualResult = calculator.сalculateIdealWeightByNegler(height);
+
+        assertEquals(expectedResult, actualResult, 1);
     }
 }
 
