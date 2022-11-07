@@ -15,4 +15,12 @@ public class Calculator {
         }
         return height - ratioBroca;
     }
+
+    public int calculateIdealWeightByLorentz(int height) {
+        if (height != 0) {
+            int weightResult = (height - 100) - (height - 150) / 2;
+            return (int) weightResult;
+        }
+        return 0;
+    }
 }
